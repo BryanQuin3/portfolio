@@ -1,4 +1,5 @@
-import { menuOptions, handleToggle } from "../contstants/constants";
+import { menuOptions } from "../contstants/constants";
+import { handleToggle } from "../logics/logics";
 import { MenuIcon } from "./Icons";
 import { useRef } from "react";
 export const Header = () => {

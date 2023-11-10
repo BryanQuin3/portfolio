@@ -13,10 +13,6 @@ export const menuOptions = [
   },
 ];
 
-export const handleToggle = (element) => {
-  element.classList.toggle("hidden");
-};
-
 export const aboutIcons = [
   {
     link: "https://linkedin.com/in/bryan-quintana-440176299",
@@ -38,6 +34,7 @@ export const aboutIcons = [
 
 export const projects = [
   {
+    id: 1,
     name: "NFT Marketplace",
     description:
       "Marketplace de NFTs desarrollado con Tailwind,Vanilla JS y HTML",
@@ -50,6 +47,7 @@ export const projects = [
     textColor: "text-white",
   },
   {
+    id: 2,
     name: "Alianza Refrigeración",
     description:
       "Catálogo empresarial desarrollado con Tailwind, Vanilla JS y HTML",
@@ -62,6 +60,7 @@ export const projects = [
     textColor: "text-white",
   },
   {
+    id: 3,
     name: "Clon de Crunchyroll",
     description:
       "Clon de Crunchyroll desarrollado con Tailwind, Vanilla JS y HTML",
@@ -74,6 +73,7 @@ export const projects = [
     textColor: "text-gray-900",
   },
   {
+    id: 4,
     name: "Web de Turismo en Japón",
     description:
       "Web de turismo en Japón desarrollada con Tailwind, Vanilla JS y HTML",
