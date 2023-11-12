@@ -37,7 +37,7 @@ export const projects = [
     id: 1,
     name: "NFT Marketplace",
     description:
-      "Marketplace de NFTs desarrollado con Tailwind,Vanilla JS y HTML",
+      "Propuesta para la startup Conquer Degens: Optimicé la interfaz para una experiencia más amigable y aumenté el rendimiento al máximo, alcanzando un 100% en PageSpeed, superando el 52% original.",
     img: {
       src: "./images/nft.png",
       alt: "nft",
@@ -45,12 +45,13 @@ export const projects = [
     link: "https://bryanquin3.github.io/nft",
     bgColor: "bg-indigo-500",
     textColor: "text-white",
+    tecnologies: ["Tailwind", "Vanilla JS", "HTML"],
   },
   {
     id: 2,
     name: "Alianza Refrigeración",
     description:
-      "Catálogo empresarial desarrollado con Tailwind, Vanilla JS y HTML",
+      "Transformé el sitio web de Alianza Refrigeración, mejorando la página de inicio, optimizando el SEO para aumentar el tráfico orgánico en un impresionante 170% en solo 6 meses",
     img: {
       src: "./images/catalogo.png",
       alt: "catalogo",
@@ -58,12 +59,13 @@ export const projects = [
     link: "https://alianzarefrigeracion.com",
     bgColor: "bg-indigo-500",
     textColor: "text-white",
+    tecnologies: ["Wordpress", "CSS", "Elementor"],
   },
   {
     id: 3,
     name: "Clon de Crunchyroll",
     description:
-      "Clon de Crunchyroll desarrollado con Tailwind, Vanilla JS y HTML",
+      "Este proyecto demuestra mi dominio en la creación de interfaces interactivas. Destacando habilidades técnicas y creativas, ofrece una experiencia inmersiva similar a Crunchyroll.",
     img: {
       src: "./images/crunchyroll.png",
       alt: "crunchyroll",
@@ -71,12 +73,13 @@ export const projects = [
     link: "https://crunchyroll-clone-seven.vercel.app/",
     bgColor: "bg-indigo-500",
     textColor: "text-gray-900",
+    tecnologies: ["React", "CSS", "API"],
   },
   {
     id: 4,
     name: "Web de Turismo en Japón",
     description:
-      "Web de turismo en Japón desarrollada con Tailwind, Vanilla JS y HTML",
+      "Diseñada para la Embajada, fusiona estética y funcionalidad, destacando la riqueza cultural del país nipón para potenciar el turismo de manera impactante.",
     img: {
       src: "./images/japon.png",
       alt: "japon",
@@ -84,5 +87,6 @@ export const projects = [
     link: "https://bryanquin3.github.io/Tourism-Website-Japan/",
     bgColor: "bg-indigo-500",
     textColor: "text-white",
+    tecnologies: ["Sass", "Vanilla JS", "HTML"],
   },
 ];

@@ -1,10 +1,13 @@
 export const ProfileSection = () => {
   return (
-    <figure className="col-span-2">
+    <figure
+      className="col-span-2 rounded-3xl overflow-hidden bg-cover bg-center"
+      style={{ backgroundImage: "url('./images/bg.jpg')" }}
+    >
       <img
-        src="./images/bg.jpg"
+        src="./images/my-profile.png"
         alt="Bryan Quintana"
-        className="rounded-3xl h-64 object-cover w-full md:h-96 lg:h-full"
+        className="m-auto h-64  md:h-96 lg:h-full"
       />
     </figure>
   );
