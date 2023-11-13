@@ -3,7 +3,7 @@ export const AboutSection = () => {
   return (
     <div
       className="col-span-4 bg-no-repeat bg-cover min-w-full flex flex-col gap-4 justify-center items-center p-10 overflow-hidden rounded-3xl md:gap-12"
-      style={{ backgroundImage: "url('./images/bg.jpg')" }}
+      style={{ backgroundImage: "url('./images/bg.webp')" }}
     >
       <h2 className="text-3xl font-semibold pr-6 md:text-5xl">
         ¡Hola! Soy Bryan, un Desarrollador Frontend Super Creativo.
