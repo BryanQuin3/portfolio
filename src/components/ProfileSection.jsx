@@ -2,7 +2,7 @@ export const ProfileSection = () => {
   return (
     <figure
       className="col-span-2 rounded-3xl overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: "url('./images/bg.jpg')" }}
+      style={{ backgroundImage: "url('./images/bg.webp')" }}
     >
       <img
         src="./images/my-profile.webp"
