@@ -13,6 +13,7 @@ export const ProjectCard = ({ project }) => {
       <header className="flex items-center gap-2 justify-between w-full">
         <h3 className={`text-2xl font-semibold text-black`}>{project.name}</h3>
         <a
+          title="Ir al proyecto"
           href={project.link}
           target="_blank"
           className="group bg-white p-3 rounded-full self-start hover:cursor-pointer hover:bg-gray-900 transition-colors duration-300"
