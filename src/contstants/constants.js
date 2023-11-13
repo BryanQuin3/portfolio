@@ -39,7 +39,7 @@ export const projects = [
     description:
       "Propuesta para la startup Conquer Degens: Optimicé la interfaz para una experiencia más amigable y aumenté el rendimiento al máximo, alcanzando un 100% en PageSpeed, superando el 52% original.",
     img: {
-      src: "./images/nft.png",
+      src: "./images/nft.webp",
       alt: "nft",
     },
     link: "https://bryanquin3.github.io/nft",
@@ -53,7 +53,7 @@ export const projects = [
     description:
       "Transformé el sitio web de Alianza Refrigeración, mejorando la página de inicio, optimizando el SEO para aumentar el tráfico orgánico en un impresionante 170% en solo 6 meses",
     img: {
-      src: "./images/catalogo.png",
+      src: "./images/catalogo.webp",
       alt: "catalogo",
     },
     link: "https://alianzarefrigeracion.com",
@@ -67,7 +67,7 @@ export const projects = [
     description:
       "Este proyecto demuestra mi dominio en la creación de interfaces interactivas. Destacando habilidades técnicas y creativas, ofrece una experiencia inmersiva similar a Crunchyroll.",
     img: {
-      src: "./images/crunchyroll.png",
+      src: "./images/crunchyroll.webp",
       alt: "crunchyroll",
     },
     link: "https://crunchyroll-clone-seven.vercel.app/",
@@ -81,7 +81,7 @@ export const projects = [
     description:
       "Diseñada para la Embajada, fusiona estética y funcionalidad, destacando la riqueza cultural del país nipón para potenciar el turismo de manera impactante.",
     img: {
-      src: "./images/japon.png",
+      src: "./images/japon.webp",
       alt: "japon",
     },
     link: "https://bryanquin3.github.io/Tourism-Website-Japan/",

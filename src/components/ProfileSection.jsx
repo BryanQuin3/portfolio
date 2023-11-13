@@ -5,7 +5,7 @@ export const ProfileSection = () => {
       style={{ backgroundImage: "url('./images/bg.jpg')" }}
     >
       <img
-        src="./images/my-profile.png"
+        src="./images/my-profile.webp"
         alt="Bryan Quintana"
         className="m-auto h-64  md:h-96 lg:h-full"
       />

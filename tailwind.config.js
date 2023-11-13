@@ -8,7 +8,7 @@ export default {
       },
       animation: {
         fadeInDown: "fadeInDown 1s ease-out",
-        fadeZoomIn: "zoomIn 0.6s ease-out",
+        fadeZoomIn: "zoomIn 1s ease-out",
         border: "border 1s ease-in-out infinite",
       },
       keyframes: {
