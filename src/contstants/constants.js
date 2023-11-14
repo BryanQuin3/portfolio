@@ -65,7 +65,7 @@ export const projects = [
     id: 3,
     name: "Clon de Crunchyroll",
     description:
-      "Este proyecto demuestra mi dominio en la creación de interfaces interactivas. Destacando habilidades técnicas y creativas, ofrece una experiencia inmersiva similar a Crunchyroll.",
+      "Este proyecto tiene como objetivo replicar la experiencia de navegación y visualización de anime en Crunchyroll utilizando una API de datos de anime.",
     img: {
       src: "./images/crunchyroll.webp",
       alt: "crunchyroll",
