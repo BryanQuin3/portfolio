@@ -90,3 +90,23 @@ export const projects = [
     tecnologies: ["Sass", "Vanilla JS", "HTML"],
   },
 ];
+
+export const inputsType = [
+  {
+    label: "Nombre",
+    type: "text",
+    id: "name",
+    placeholder: "Nombre",
+  },
+  {
+    label: "Correo",
+    type: "email",
+    id: "email",
+    placeholder: "Correo",
+  },
+  {
+    label: "Mensaje",
+    id: "message",
+    isTextArea: true,
+  },
+];
