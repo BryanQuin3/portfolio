@@ -1,9 +1,5 @@
-import { menuOptions } from "../contstants/constants";
-import { handleToggle, handleSmoothScroll } from "../logics/logics";
-import { MenuIcon } from "./Icons";
-import { useRef } from "react";
+import { Menu } from "./Menu";
 export const Header = () => {
-  const menuContainer = useRef(null);
   return (
     <header className="flex justify-between pt-3 w-full">
       <nav className="bg-white border-gray-200 w-full px-4 md:px-0">
@@ -16,41 +12,7 @@ export const Header = () => {
               </h1>
             </li>
           </ul>
-          <button
-            data-collapse-toggle="navbar-default"
-            type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400"
-            aria-controls="navbar-default"
-            aria-expanded="false"
-            onClick={() => handleToggle(menuContainer.current)}
-          >
-            <span className="sr-only">Open main menu</span>
-            <MenuIcon />
-          </button>
-          <div
-            ref={menuContainer}
-            className="hidden w-full md:block md:w-auto"
-            id="navbar-default"
-          >
-            <ul className="relative ont-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
-              {menuOptions.map((option, index) => (
-                <li key={index} className="group text-black text-lg ">
-                  <a
-                    title={`ir a ${option.name}`}
-                    href={option.link}
-                    className={`hover:opacity-100 cursor-pointer ${
-                      option.link === "/"
-                        ? "opacity-100 font-semibold"
-                        : "opacity-90"
-                    }`}
-                    onClick={(e) => handleSmoothScroll(e, option.link)}
-                  >
-                    {option.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <Menu />
         </div>
       </nav>
     </header>
