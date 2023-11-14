@@ -1,5 +1,5 @@
 import { menuOptions } from "../contstants/constants";
-import { handleToggle } from "../logics/logics";
+import { handleToggle, handleSmoothScroll } from "../logics/logics";
 import { MenuIcon } from "./Icons";
 import { useRef } from "react";
 export const Header = () => {
@@ -35,15 +35,18 @@ export const Header = () => {
             <ul className="relative ont-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
               {menuOptions.map((option, index) => (
                 <li key={index} className="group text-black text-lg ">
-                  <span
+                  <a
+                    title={`ir a ${option.name}`}
+                    href={option.link}
                     className={`hover:opacity-100 cursor-pointer ${
                       option.link === "/"
                         ? "opacity-100 font-semibold"
                         : "opacity-90"
                     }`}
+                    onClick={(e) => handleSmoothScroll(e, option.link)}
                   >
                     {option.name}
-                  </span>
+                  </a>
                 </li>
               ))}
             </ul>

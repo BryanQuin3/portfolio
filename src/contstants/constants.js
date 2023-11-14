@@ -1,15 +1,15 @@
 export const menuOptions = [
   {
-    name: "Home",
+    name: "Inicio",
     link: "/",
   },
   {
-    name: "Projects",
-    link: "/projects",
+    name: "Proyectos",
+    link: "#projects",
   },
   {
-    name: "Contact",
-    link: "/contact",
+    name: "Contacto",
+    link: "#contact",
   },
 ];
 

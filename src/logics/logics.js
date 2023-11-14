@@ -1,3 +1,8 @@
+/**
+ * Handles mouse move event to rotate an element based on mouse position.
+ * @param {MouseEvent} e - The mouse event object.
+ * @param {HTMLElement} element - The element to be rotated.
+ */
 export const handleMouseMove = (e, element) => {
   const el = element;
   const height = el.clientHeight;
@@ -9,10 +14,37 @@ export const handleMouseMove = (e, element) => {
   el.style.transform = transform;
 };
 
+/**
+ * Handles the mouse leave event for an element by resetting its transform style.
+ * @param {HTMLElement} element - The element to handle the event for.
+ */
 export const handleMouseLeave = (element) => {
   element.style.transform = `perspective(500px) scale(1) rotateX(0) rotateY(0)`;
 };
 
+/**
+ * Toggles the "hidden" class of an element.
+ * @param {HTMLElement} element - The element to toggle the class on.
+ */
 export const handleToggle = (element) => {
   element.classList.toggle("hidden");
+};
+
+/**
+ * Handles smooth scrolling to a target element on the page.
+ * @param {Event} element - The event object.
+ * @param {string} link - The link to the target element on the page.
+ * @returns {void}
+ */
+export const handleSmoothScroll = (element, link) => {
+  element.preventDefault();
+  // eliminate the # from the link
+  const targetId = link.substring(1);
+  const targetElement = document.getElementById(targetId);
+  if (targetElement) {
+    targetElement.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
 };
