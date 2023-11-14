@@ -3,12 +3,15 @@ import { ArrowOutward } from "./Icons";
 import { useRef } from "react";
 import { handleMouseLeave, handleMouseMove } from "../logics/logics";
 import { Tecnologies } from "./Tecnologies";
+import { useAnime } from "../hooks/useAnime";
 export const ProjectCard = ({ project }) => {
   const ref = useRef(null);
+  const cardRef = useAnime("opacity-0", "animate-fadeInDown");
 
   return (
     <article
-      className={`flex items-center flex-col justify-center gap-4 p-8 h-full  rounded-xl bg-gradient-to-r from-gray-100 via-green-50 to-amber-50 border  hover:shadow-sm hover:cursor-pointer`}
+      ref={cardRef}
+      className={`opacity-0 flex items-center flex-col justify-center gap-4 p-8 h-full  rounded-xl bg-gradient-to-r from-gray-100 via-green-50 to-amber-50 border  hover:shadow-sm hover:cursor-pointer`}
     >
       <header className="flex items-center gap-2 justify-between w-full">
         <h3 className={`text-2xl font-semibold text-black`}>{project.name}</h3>
