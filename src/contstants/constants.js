@@ -51,7 +51,7 @@ export const projects = [
     id: 2,
     name: "Alianza Refrigeración",
     description:
-      "Transformé el sitio web de Alianza Refrigeración, mejorando la página de inicio, optimizando el SEO para aumentar el tráfico orgánico en un impresionante 170% en solo 6 meses",
+      "Transformé el sitio web de Alianza Refrigeración, mejorando la página de inicio y optimizando el SEO para aumentar el tráfico orgánico de manera impresionante, logrando un aumento del 170% en solo 6 meses.",
     img: {
       src: "./images/catalogo.webp",
       alt: "catalogo",
@@ -79,7 +79,7 @@ export const projects = [
     id: 4,
     name: "Web de Turismo en Japón",
     description:
-      "Diseñada para la Embajada, fusiona estética y funcionalidad, destacando la riqueza cultural del país nipón para potenciar el turismo de manera impactante.",
+      "En colaboración con el talentoso diseñador Mehrab Bozorgi, he transformado su visión creativa en una cautivadora plataforma web de turismo.",
     img: {
       src: "./images/japon.webp",
       alt: "japon",
