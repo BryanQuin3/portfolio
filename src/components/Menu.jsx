@@ -1,9 +1,12 @@
+/* eslint-disable react/prop-types */
 import { menuOptions } from "../contstants/constants";
 import { handleToggle, handleSmoothScroll } from "../logics/logics";
 import { MenuIcon } from "./Icons";
 import { useRef } from "react";
+import { handleHoverMouseEnter, handleHoverMouseLeave } from "../logics/logics";
 export const Menu = () => {
   const menuContainer = useRef(null);
+  const backdropRef = useRef(null);
 
   return (
     <>
@@ -19,21 +22,30 @@ export const Menu = () => {
         <MenuIcon />
       </button>
       <div
+        ref={backdropRef}
+        className={`hidden lg:block absolute bg-black/5 backdrop-blur-lg rounded left-[var(--left)] 
+        top-[var(--top)] w-[var(--width)] h-[var(--height)] transition-all duration-300
+        ease-in-out opacity-0
+        `}
+      ></div>
+      <nav
         ref={menuContainer}
         className="hidden w-full md:block md:w-auto"
         id="navbar-default"
       >
-        <ul className="relative ont-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+        <ul className="relative font-medium flex flex-col items-center p-4 md:p-0 mt-4 rounded-lg  md:flex-row md:space-x-8 md:mt-0">
           {menuOptions.map((option, index) => (
             <li key={index} className="group text-black text-lg ">
               <a
+                onMouseEnter={(e) =>
+                  handleHoverMouseEnter(e, backdropRef.current)
+                }
+                onMouseLeave={(e) =>
+                  handleHoverMouseLeave(e, backdropRef.current)
+                }
                 title={`ir a ${option.name}`}
                 href={option.link}
-                className={`hover:opacity-100 cursor-pointer ${
-                  option.link === "/"
-                    ? "opacity-100 font-semibold"
-                    : "opacity-90"
-                }`}
+                className={`cursor-pointer font-semibold`}
                 onClick={(e) => handleSmoothScroll(e, option.link)}
               >
                 {option.name}
@@ -41,7 +53,7 @@ export const Menu = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </nav>
     </>
   );
 };

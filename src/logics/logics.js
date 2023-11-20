@@ -48,3 +48,18 @@ export const handleSmoothScroll = (element, link) => {
     });
   }
 };
+
+export const handleHoverMouseEnter = (event, menuBackdrop) => {
+  const { left, top, width, height } = event.target.getBoundingClientRect();
+  menuBackdrop.style.setProperty("--left", `${left - 168}px`);
+  menuBackdrop.style.setProperty("--top", `${top - 12}px`);
+  menuBackdrop.style.setProperty("--width", `${width + 10}px`);
+  menuBackdrop.style.setProperty("--height", `${height + 4}px`);
+  menuBackdrop.style.opacity = 1;
+  menuBackdrop.style.visibility = "visible";
+};
+
+export const handleHoverMouseLeave = (event, menuBackdrop) => {
+  menuBackdrop.style.opacity = 0;
+  menuBackdrop.style.visibility = "hidden";
+};
