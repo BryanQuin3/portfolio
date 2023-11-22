@@ -3,10 +3,8 @@ import { menuOptions } from "../contstants/constants";
 import { handleToggle, handleSmoothScroll } from "../logics/logics";
 import { MenuIcon } from "./Icons";
 import { useRef } from "react";
-import { handleHoverMouseEnter, handleHoverMouseLeave } from "../logics/logics";
 export const Menu = () => {
   const menuContainer = useRef(null);
-  const backdropRef = useRef(null);
 
   return (
     <>
@@ -30,12 +28,6 @@ export const Menu = () => {
           {menuOptions.map((option, index) => (
             <li key={index} className="group text-black text-lg ">
               <a
-                onMouseEnter={(e) =>
-                  handleHoverMouseEnter(e, backdropRef.current)
-                }
-                onMouseLeave={(e) =>
-                  handleHoverMouseLeave(e, backdropRef.current)
-                }
                 title={`ir a ${option.name}`}
                 href={option.link}
                 className={`cursor-pointer font-semibold`}
