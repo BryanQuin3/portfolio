@@ -51,7 +51,7 @@ export const handleSmoothScroll = (element, link) => {
 
 export const handleHoverMouseEnter = (event, menuBackdrop) => {
   const { left, top, width, height } = event.target.getBoundingClientRect();
-  menuBackdrop.style.setProperty("--left", `${left - 168}px`);
+  menuBackdrop.style.setProperty("--left", `${left}px`);
   menuBackdrop.style.setProperty("--top", `${top - 12}px`);
   menuBackdrop.style.setProperty("--width", `${width + 10}px`);
   menuBackdrop.style.setProperty("--height", `${height + 4}px`);

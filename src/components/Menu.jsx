@@ -21,19 +21,12 @@ export const Menu = () => {
         <span className="sr-only">Open main menu</span>
         <MenuIcon />
       </button>
-      <div
-        ref={backdropRef}
-        className={`hidden lg:block absolute bg-black/5 backdrop-blur-lg rounded left-[var(--left)] 
-        top-[var(--top)] w-[var(--width)] h-[var(--height)] transition-all duration-300
-        ease-in-out opacity-0
-        `}
-      ></div>
       <nav
         ref={menuContainer}
         className="hidden w-full md:block md:w-auto"
         id="navbar-default"
       >
-        <ul className="relative font-medium flex flex-col items-center p-4 md:p-0 mt-4 rounded-lg  md:flex-row md:space-x-8 md:mt-0">
+        <ul className="relative ont-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
           {menuOptions.map((option, index) => (
             <li key={index} className="group text-black text-lg ">
               <a
