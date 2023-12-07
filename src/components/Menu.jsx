@@ -29,11 +29,11 @@ export const Menu = () => {
         className="hidden w-full md:block md:w-auto"
         id="navbar-default"
       >
-        <ul className="relative ont-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+        <ul className="relative ont-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white animate-flip-down animate-duration-[600ms] animate-ease-linear animate-fill-both md:animate-none">
           {menuOptions.map((option, index) => (
             <li
               key={index}
-              className="group text-black text-lg hover:bg-black/5 rounded-lg px-2 py-1 transition-all duration-300 ease-in-out"
+              className="group text-black text-lg hover:bg-black/5 rounded-lg px-2 py-1 transition-all duration-300 ease-in-out "
             >
               <a
                 title={`ir a ${option.name}`}
