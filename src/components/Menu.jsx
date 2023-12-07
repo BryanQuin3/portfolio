@@ -1,22 +1,18 @@
 /* eslint-disable react/prop-types */
 import { menuOptions } from "../contstants/constants";
-import { handleToggle, handleSmoothScroll } from "../logics/logics";
+import { handleSmoothScroll } from "../logics/logics";
 import { MenuIcon } from "./Icons";
 import { useState } from "react";
-import { useRef } from "react";
 export const Menu = () => {
-  const menuContainer = useRef(null);
   const [active, setActive] = useState(false);
-  const handleMenu = () => {
-    handleToggle(menuContainer.current);
-    setActive(!active);
-  };
+  const animationClass = active ? "animate-fade-down" : "animate-fade-up";
+
   return (
     <>
       <button
         type="button"
         className="hamburger inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden bg-gray-100 focus:outline-none   dark:text-gray-400 transform transition-transform"
-        onClick={() => handleMenu()}
+        onClick={() => setActive(!active)}
         aria-expanded="false"
         aria-label="Toggle menu"
       >
@@ -25,11 +21,12 @@ export const Menu = () => {
       </button>
 
       <nav
-        ref={menuContainer}
-        className="hidden w-full md:block md:w-auto"
+        className={`${active ? "block" : "hidden"} w-full md:block md:w-auto`}
         id="navbar-default"
       >
-        <ul className="relative ont-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white animate-flip-down animate-duration-[600ms] animate-ease-linear animate-fill-both md:animate-none">
+        <ul
+          className={`relative ont-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ${animationClass} animate-fill-both animate-duration-[600ms]  md:animate-none`}
+        >
           {menuOptions.map((option, index) => (
             <li
               key={index}

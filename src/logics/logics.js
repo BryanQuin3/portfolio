@@ -23,14 +23,6 @@ export const handleMouseLeave = (element) => {
 };
 
 /**
- * Toggles the "hidden" class of an element.
- * @param {HTMLElement} element - The element to toggle the class on.
- */
-export const handleToggle = (element) => {
-  element.classList.toggle("hidden");
-};
-
-/**
  * Handles smooth scrolling to a target element on the page.
  * @param {Event} element - The event object.
  * @param {string} link - The link to the target element on the page.
