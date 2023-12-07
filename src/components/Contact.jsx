@@ -1,17 +1,14 @@
 import { InputField } from "./InputField";
-import { useAnime } from "../hooks/useAnime";
 import { useForm, ValidationError } from "@formspree/react";
 import { inputsType } from "../contstants/constants";
 export const Contact = () => {
-  const ref = useAnime("opacity-0", "fadeInDown");
   const [state, handleSubmit] = useForm("xvojnknz");
 
   return (
     <form
       onSubmit={handleSubmit}
-      ref={ref}
       id="contact"
-      className="opacity-0 mt-12 w-full p-10 bg-no-repeat bg-cover bg-center bg-fixe rounded-3xl flex flex-col gap-2"
+      className="animate-scroll mt-12 w-full p-10 bg-no-repeat bg-cover bg-center bg-fixe rounded-3xl flex flex-col gap-2"
       action=""
       style={{ backgroundImage: "url('../images/bg.webp')" }}
     >
