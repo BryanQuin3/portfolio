@@ -1,20 +1,18 @@
 /* eslint-disable react/prop-types */
-export const MenuIcon = () => {
+export const MenuIcon = ({ isActive }) => {
   return (
     <svg
-      className="w-5 h-5"
-      aria-hidden="true"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 17 14"
+      viewBox="0 0 32 32"
+      height="2em"
+      className={isActive ? "transform -rotate-45" : ""}
     >
       <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M1 1h15M1 7h15M1 13h15"
-      />
+        className={
+          isActive ? "line line-top-bottom menu-active" : "line line-top-bottom"
+        }
+        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+      ></path>
+      <path className="line" d="M7 16 27 16"></path>
     </svg>
   );
 };

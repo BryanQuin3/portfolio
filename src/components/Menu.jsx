@@ -2,23 +2,28 @@
 import { menuOptions } from "../contstants/constants";
 import { handleToggle, handleSmoothScroll } from "../logics/logics";
 import { MenuIcon } from "./Icons";
+import { useState } from "react";
 import { useRef } from "react";
 export const Menu = () => {
   const menuContainer = useRef(null);
-
+  const [active, setActive] = useState(false);
+  const handleMenu = () => {
+    handleToggle(menuContainer.current);
+    setActive(!active);
+  };
   return (
     <>
       <button
-        data-collapse-toggle="navbar-default"
         type="button"
-        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400"
-        aria-controls="navbar-default"
+        className="hamburger inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden bg-gray-100 focus:outline-none   dark:text-gray-400 transform transition-transform"
+        onClick={() => handleMenu()}
         aria-expanded="false"
-        onClick={() => handleToggle(menuContainer.current)}
+        aria-label="Toggle menu"
       >
         <span className="sr-only">Open main menu</span>
-        <MenuIcon />
+        <MenuIcon isActive={active} />
       </button>
+
       <nav
         ref={menuContainer}
         className="hidden w-full md:block md:w-auto"
