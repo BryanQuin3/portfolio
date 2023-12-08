@@ -18,7 +18,7 @@ export const aboutIcons = [
     link: "https://linkedin.com/in/bryan-quintana-440176299",
     linkClasses: "hover:bg-blue-700 ",
     img: {
-      src: "./images/linkedin.png",
+      src: "./images/linkedin.svg",
       alt: "linkedin",
     },
   },
@@ -26,7 +26,7 @@ export const aboutIcons = [
     link: "https://github.com/BryanQuin3",
     linkClasses: "hover:bg-gray-900",
     img: {
-      src: "./images/github.png",
+      src: "./images/github.svg",
       alt: "github",
     },
   },
