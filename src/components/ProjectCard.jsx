@@ -29,7 +29,7 @@ export const ProjectCard = ({ project }) => {
           onMouseMove={(e) => handleMouseMove(e, ref.current)}
           onMouseLeave={() => handleMouseLeave(ref.current)}
           loading="lazy"
-          className="rounded-lg w-full hover:cursor-pointer"
+          className="rounded-lg w-full hover:cursor-pointer hover:shadow-3xl"
           src={project.img.src}
           alt={project.img.alt}
         />

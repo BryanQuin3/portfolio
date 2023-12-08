@@ -6,6 +6,9 @@ export default {
       textWrap: {
         balance: "balance",
       },
+      boxShadow: {
+        "3xl": "0px 0px 15px rgba(0, 0, 0, .5)",
+      },
       animation: {
         fadeInDown: "fadeInDown 1s ease-out",
         fadeZoomIn: "zoomIn 1s ease-out",
