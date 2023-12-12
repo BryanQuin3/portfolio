@@ -65,7 +65,7 @@ export const projects = [
     id: 3,
     name: "Clon de Crunchyroll",
     description:
-      "Este proyecto tiene como objetivo replicar la experiencia de navegación y visualización de anime en Crunchyroll utilizando una API de datos de anime.",
+      "Recreé la experiencia de navegación de Crunchyroll utilizando una API de datos de anime, desarrollando una SPA, logrando mejorar la experiencia de usuario y la velocidad de carga.",
     img: {
       src: "./images/crunchyroll.webp",
       alt: "crunchyroll",
@@ -96,13 +96,13 @@ export const inputsType = [
     label: "Nombre",
     type: "text",
     id: "name",
-    placeholder: "Nombre",
+    placeholder: "Juan Pérez",
   },
   {
     label: "Correo",
     type: "email",
     id: "email",
-    placeholder: "Correo",
+    placeholder: "ejemplo@gmail.com",
   },
   {
     label: "Mensaje",

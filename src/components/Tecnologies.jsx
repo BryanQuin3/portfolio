@@ -5,7 +5,7 @@ export const Tecnologies = ({ tecnologies }) => {
       {tecnologies.map((tag, index) => (
         <li
           key={index}
-          className="rounded-full bg-gradient-to-r from-gray-100 via-green-50 to-amber-50 border px-2 py-1 font-semibold ripple md:px-4 hover:cursor-pointer"
+          className="rounded-full bg-gradient-to-r from-gray-100 via-green-50 to-amber-50 border px-2 py-1 font-semibold md:px-4"
         >
           <span>{tag}</span>
         </li>

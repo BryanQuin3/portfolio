@@ -4,7 +4,7 @@ import { aboutIcons } from "../contstants/constants";
 export const Footer = () => {
   return (
     <footer className="flex justify-start items-center gap-3 w-full">
-      <ContactBtn text={"Contactame"} />
+      <ContactBtn text={"Contáctame"} />
       <ul className="flex gap-3">
         {aboutIcons.map((icon, index) => (
           <li
