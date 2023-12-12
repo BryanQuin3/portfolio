@@ -108,5 +108,6 @@ export const inputsType = [
     label: "Mensaje",
     id: "message",
     isTextArea: true,
+    placeholder: "Escribe aquí tu mensaje...",
   },
 ];

@@ -19,6 +19,7 @@ export const Contact = () => {
             prefix={input.type}
             field={input.type}
             errors={state.errors}
+            placeholder={input.placeholder}
           />
         </div>
       ))}
