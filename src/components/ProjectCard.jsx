@@ -1,11 +1,7 @@
 /* eslint-disable react/prop-types */
 import { ArrowOutward } from "./Icons";
-import { useRef } from "react";
-import { handleMouseLeave, handleMouseMove } from "../logics/logics";
 import { Tecnologies } from "./Tecnologies";
 export const ProjectCard = ({ project }) => {
-  const ref = useRef(null);
-
   return (
     <article
       className={`flex items-center flex-col justify-center gap-4 p-8 h-full  rounded-xl bg-gradient-to-r from-gray-100 via-green-50 to-amber-50 border animate-scroll  hover:shadow-sm`}
@@ -25,11 +21,8 @@ export const ProjectCard = ({ project }) => {
       <p className={`text-wrap-balance text-black`}>{project.description}</p>
       <a href={project.link} target="_blank" rel="noreferrer">
         <img
-          ref={ref}
-          onMouseMove={(e) => handleMouseMove(e, ref.current)}
-          onMouseLeave={() => handleMouseLeave(ref.current)}
           loading="lazy"
-          className="rounded-lg w-full hover:cursor-pointer hover:shadow-3xl"
+          className="rounded-lg w-full hover:cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-500"
           src={project.img.src}
           alt={project.img.alt}
         />
