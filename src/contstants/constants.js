@@ -111,3 +111,8 @@ export const inputsType = [
     placeholder: "Escribe aquí tu mensaje...",
   },
 ];
+
+export const messages = {
+  success:  "Mensaje enviado",
+  error: "Hubo un error, por favor intenta de nuevo.",
+};
