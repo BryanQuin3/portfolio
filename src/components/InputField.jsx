@@ -23,6 +23,7 @@ export const InputField = ({ label, type, id, placeholder, isTextArea }) => {
         type={type}
         className="rounded-lg p-3 w-full focus:ring-2 focus:ring-gray-900"
         id={id}
+        name={id}
         placeholder={placeholder}
       />
     </div>

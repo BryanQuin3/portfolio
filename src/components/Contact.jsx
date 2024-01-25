@@ -9,7 +9,6 @@ export const Contact = () => {
       onSubmit={handleSubmit}
       id="contact"
       className="animate-scroll mt-12 w-full p-10 bg-no-repeat bg-cover bg-center bg-fixe rounded-3xl flex flex-col gap-5"
-      action=""
       style={{ backgroundImage: "url('../images/bg.webp')" }}
     >
       {inputsType.map((input) => (
