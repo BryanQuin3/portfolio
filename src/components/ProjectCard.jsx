@@ -12,14 +12,20 @@ export const ProjectCard = ({ project }) => {
           title="Ir al proyecto"
           href={project.link}
           target="_blank"
-          className="group bg-white p-3 rounded-full self-start hover:cursor-pointer hover:bg-gray-900 transition-colors duration-300"
+          className="group bg-white p-3 rounded-full self-start hover:cursor-pointer hover:bg-gray-900 transition-colors duration-300 overflow-hidden relative"
           rel="noreferrer"
         >
-          <ArrowOutward className="group-hover:fill-white hover:cursor-pointer transition-colors duration-300" />
+          <ArrowOutward className="group-hover:fill-white hover:cursor-pointer   group-hover:translate-x-9 group-hover:-translate-y-7 duration-300" />
+          <ArrowOutward className="group-hover:fill-white hover:cursor-pointer duration-300 absolute -bottom-5 -left-5 group-hover:translate-x-8 group-hover:-translate-y-8" />
         </a>
       </header>
       <p className={`text-wrap-balance text-black`}>{project.description}</p>
-      <a href={project.link} target="_blank" rel="noreferrer">
+      <a
+        href={project.link}
+        target="_blank"
+        rel="noreferrer"
+        title={`Ir al proyecto ${project.name}`}
+      >
         <img
           loading="lazy"
           className="rounded-lg w-full hover:cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-500"
