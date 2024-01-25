@@ -1,6 +1,6 @@
 import { InputField } from "./InputField";
 import { Notification } from "./Notification";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
 import { inputsType, messages } from "../contstants/constants";
 import { useState } from "react";
 
@@ -12,14 +12,13 @@ export const Contact = () => {
     setShowNotification(true);
     setTimeout(() => {
       setShowNotification(false);
-    }, 3000);
+    }, 3500);
   };
 
   const onSubmit = (e) => {
     e.preventDefault();
     handleSubmit(e);
     handleNotification();
-    e.target.reset();
   };
 
   return (
@@ -32,21 +31,16 @@ export const Contact = () => {
       {inputsType.map((input) => (
         <div key={input.id}>
           <InputField {...input} />
-          <ValidationError
-            prefix={input.type}
-            field={input.type}
-            errors={state.errors}
-            placeholder={input.placeholder}
-          />
         </div>
       ))}
       <div className="flex justify-between items-center align-start mt-4">
         <button className="bg-gray-900 py-2 px-8 rounded-full text-white font-semibold hover:bg-transparent hover:text-gray-900 transition-all duration-300 border-2 border-gray-900">
-          Enviar
+          {state.submitting ? "Enviando..." : "Enviar"}
         </button>
-        {state.result && showNotification && (
+
+        {state.succeeded && showNotification && !state.submitting && (
           <Notification
-            message={state.errors ? `${messages.error}` : `${messages.success}`}
+            message={state.errors ? messages.error : messages.success}
           />
         )}
       </div>
