@@ -19,6 +19,9 @@ export const Contact = () => {
     e.preventDefault();
     handleSubmit(e);
     handleNotification();
+    setTimeout(() => {
+      e.target.reset();
+    }, 2000);
   };
 
   return (
