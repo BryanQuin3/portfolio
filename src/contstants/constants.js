@@ -113,6 +113,6 @@ export const inputsType = [
 ];
 
 export const messages = {
-  success:  "Mensaje enviado",
+  success:  "Enviado",
   error: "Hubo un error, por favor intenta de nuevo.",
 };
