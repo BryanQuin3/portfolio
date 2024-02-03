@@ -9,12 +9,13 @@ export const Footer = () => {
         {aboutIcons.map((icon, index) => (
           <li
             key={index}
-            className={`group rounded-full bg-white m-auto p-2 cursor-pointer transition-all duration-300 ${icon.linkClasses}`}
+            className="group rounded-full bg-white m-auto p-2 cursor-pointer transition-all duration-300 hover:bg-gray-900"
           >
             <SocialIcon
               href={icon.link}
               src={icon.img.src}
               alt={icon.img.alt}
+              title={icon.title}
             />
           </li>
         ))}

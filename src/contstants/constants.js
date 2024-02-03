@@ -15,8 +15,8 @@ export const menuOptions = [
 
 export const aboutIcons = [
   {
-    link: "https://linkedin.com/in/bryan-quintana-440176299",
-    linkClasses: "hover:bg-blue-700 ",
+    link: "https://www.linkedin.com/in/bryan-quintana-full-stack",
+    title: "Perfil de LinkedIn",
     img: {
       src: "./images/linkedin.svg",
       alt: "linkedin",
@@ -24,7 +24,7 @@ export const aboutIcons = [
   },
   {
     link: "https://github.com/BryanQuin3",
-    linkClasses: "hover:bg-gray-900",
+    title: "Perfil de GitHub",
     img: {
       src: "./images/github.svg",
       alt: "github",

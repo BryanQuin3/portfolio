@@ -17,9 +17,9 @@ export const MenuIcon = ({ isActive }) => {
   );
 };
 
-export const SocialIcon = ({ href, src, alt }) => {
+export const SocialIcon = ({ href, src, alt, title }) => {
   return (
-    <a href={href} target="_blank" rel="noreferrer">
+    <a href={href} target="_blank" rel="noreferrer" title={title}>
       <img
         className="transition-all duration-300 group-hover:invert"
         src={src}
