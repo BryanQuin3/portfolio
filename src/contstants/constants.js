@@ -84,10 +84,10 @@ export const projects = [
       src: "./images/japon.webp",
       alt: "japon",
     },
-    link: "https://bryanquin3.github.io/Tourism-Website-Japan/",
+    link: "https://tourismjapantravel.netlify.app/",
     bgColor: "bg-indigo-500",
     textColor: "text-white",
-    tecnologies: ["Sass", "Vanilla JS", "HTML"],
+    tecnologies: ["Tailwind", "Astro", "GSAP"],
   },
 ];
 
