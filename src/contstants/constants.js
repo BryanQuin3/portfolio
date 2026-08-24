@@ -63,17 +63,17 @@ export const projects = [
   },
   {
     id: 3,
-    name: "Clon de Crunchyroll",
+    name: "Gestión veterinaria",
     description:
-      "Recreé la experiencia de navegación de Crunchyroll utilizando una API de datos de anime, desarrollando una SPA, logrando mejorar la experiencia de usuario y la velocidad de carga.",
+      "Desarrollé una plataforma veterinaria que centraliza clientes, mascotas y turnos, con dashboard operativo, autenticación segura y registros de auditoría para una clínica moderna.",
     img: {
-      src: "./images/crunchyroll.webp",
-      alt: "crunchyroll",
+      src: "./images/gestion-veterinaria.webp",
+      alt: "Dashboard de gestión veterinaria con clientes, mascotas y turnos",
     },
-    link: "https://crunchyroll-clone-seven.vercel.app/",
+    link: "https://veterinaria-libertad.netlify.app/",
     bgColor: "bg-indigo-500",
     textColor: "text-gray-900",
-    tecnologies: ["React", "CSS", "API"],
+    tecnologies: ["Next.js", "TypeScript", "PostgreSQL"],
   },
   {
     id: 4,
