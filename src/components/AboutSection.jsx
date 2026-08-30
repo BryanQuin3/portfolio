@@ -10,7 +10,7 @@ export const AboutSection = () => {
       </h2>
       <article className="flex flex-col gap-3">
         <p>
-          Con más de 3 años de experiencia, he liderado el desarrollo de
+          Con más de 4 años de experiencia, he liderado el desarrollo de
           proyectos para empresas emergentes, optimizando la experiencia del
           usuario y mejorando la velocidad de carga del sitio web en un 40%.
         </p>
